@@ -1,0 +1,1 @@
+{"guildId":"YOUR_GUILD_ID","prefix":"+","status":"online","presence":"Watching tickets","embedColors":{"primary":"#7C3AED","success":"#22C55E","error":"#EF4444","warning":"#F59E0B"},"staffRoles":["SUPPORT_STAFF_ROLE_ID","PURCHASE_STAFF_ROLE_ID"],"adminRoles":["ADMIN_ROLE_ID"],"transcriptChannelId":"TRANSCRIPT_CHANNEL_ID","logChannelId":"LOG_CHANNEL_ID","deleteDelaySeconds":5}

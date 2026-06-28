@@ -1,0 +1,1 @@
+{"ticketCreate":true,"ticketClose":true,"ticketDelete":true,"ticketRename":true,"claim":true,"unclaim":true,"memberAdd":true,"memberRemove":true,"transcript":true,"errors":true,"botReady":true,"commandUsage":true}

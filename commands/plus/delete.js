@@ -1,0 +1,1 @@
+const tickets=require('../../utils/tickets'); const logger=require('../../utils/logger'); module.exports={name:'delete',async execute(msg){ tickets.remove(msg.channel.id); await logger.log(msg.client,'ticketDelete',`${msg.channel.name} deleted by ${msg.author.tag}`); await msg.channel.send(require('../../utils/config').get('messages').deleted); await msg.channel.delete(); }};
