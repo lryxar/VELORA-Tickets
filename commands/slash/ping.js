@@ -1,0 +1,11 @@
+const { SlashCommandBuilder } = require('discord.js');
+const config = require('../../utils/config');
+const { format } = require('../../utils/tickets');
+
+module.exports = {
+  data: new SlashCommandBuilder().setName('ping').setDescription('Shows bot latency.'),
+
+  async execute(interaction) {
+    await interaction.reply({ content: format(config.get('messages').ping, { latency: interaction.client.ws.ping }) });
+  },
+};
