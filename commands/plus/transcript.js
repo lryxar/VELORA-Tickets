@@ -1,0 +1,1 @@
+const tickets=require('../../utils/tickets'); module.exports={name:'transcript',async execute(msg){ if(!tickets.byChannel(msg.channel.id)) return msg.reply('This is not a ticket.'); await tickets.transcript(msg.channel); msg.reply(require('../../utils/config').get('messages').transcriptSaved); }};

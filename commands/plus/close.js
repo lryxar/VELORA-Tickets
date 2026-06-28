@@ -1,0 +1,1 @@
+const tickets=require('../../utils/tickets'); module.exports={name:'close',async execute(msg){ if(!tickets.byChannel(msg.channel.id)) return msg.reply('This is not a ticket.'); await msg.channel.send(tickets.fmt(require('../../utils/config').get('messages').closing,{seconds:require('../../utils/config').get('bot').deleteDelaySeconds??5})); await tickets.close(msg.channel); }};
